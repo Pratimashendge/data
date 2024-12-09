@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-6">
+    <table class="table table-bordered">
+      <thead>
+        <th>Sr.no</th>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Age</th>
+        <th>Salary</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let skill of skillArr; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ skill.Name }}</td>
+          <td>{{ skill.Position }}</td>
+          <td>{{ skill.Office }}</td>
+          <td>{{ skill.Age }}</td>
+          <td>{{ skill.Salary }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

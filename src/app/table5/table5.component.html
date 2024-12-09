@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-6">
+    <table class="table table-bordered">
+      <thead>
+        <th>Sr.no</th>
+        <th>Name</th>
+        <th>Weight</th>
+        <th>Symbol</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let skill of skillArr; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ skill.Name }}</td>
+          <td>{{ skill.Weight }}</td>
+          <td>{{ skill.Symbol }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
